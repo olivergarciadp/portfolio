@@ -1,21 +1,35 @@
-import React from "react"
-import { Link } from "gatsby"
-
-import Layout from "../components/layout"
-import Image from "../components/image"
-import SEO from "../components/seo"
+import React from 'react';
+import { Link } from 'gatsby';
+import logo from '../assets/face.svg';
+import Layout from '../components/layout';
+import Projects from '../components/projects/Projects';
+// import Image from "../components/image"
+import SEO from '../components/seo';
+import './index-style.scss';
 
 const IndexPage = () => (
-  <Layout>
-    <SEO title="Home" />
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-      <Image />
-    </div>
-    <Link to="/page-2/">Go to page 2</Link>
-  </Layout>
-)
+	<Layout>
+		<SEO title="Home" />
+		<div className="index">
+			<div className="center-data">
+				<div className="logo-div">
+					<img src={logo} alt="logo" className="logo" />
+				</div>
+				<div className="text-div">
+					<h3>Hey There! I am Oliver Garcia (͡° ͜ʖ ͡° )</h3>
+					<div>
+						<p>
+							I am a Mobil Developer, I've spend the last two years working on a company of outsourcing. Now i am Looking for next opportunity.</p>
+             
+					</div>
+          <a href="#"><Link
+		>Learn more about me.</Link></a>
+				</div>
+			</div>
+		</div>
+		
+		<Projects></Projects>
+	</Layout>
+);
 
-export default IndexPage
+export default IndexPage;

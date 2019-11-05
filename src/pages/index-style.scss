@@ -1,0 +1,78 @@
+@import '../palette';
+
+.logo {
+	height: 5em;
+	width: 3em;
+	margin: 0 auto;
+}
+
+.logo-div {
+	background-color: $color2;
+	border-radius: 50%;
+	height: 150px;
+	width: 150px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+	padding: 0;
+}
+
+.index {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center; 
+    height: 100vh;
+}
+
+.index a{
+    text-align: center;
+    font-size: .9em;
+    text-decoration: none;
+    font-family: 'Lato', sans-serif;
+    padding-top: 2vh;
+}
+
+.index a:hover{
+ cursor: pointer;
+}
+
+.index .center-data{
+    max-width: 600px;
+}
+
+.index p {
+	margin: 0;
+    font-size: 1.5em;
+    text-align: center;
+    color: $color1;
+    padding-top: 5vh;
+	font-family: 'Titillium Web', sans-serif;
+}
+
+
+.index h3 {
+	padding: 0;
+	margin: 0;
+	color: $color1;
+	font-size: 2em;
+	text-align: center;
+	font-family: 'Lato', sans-serif;
+}
+
+.index .text-div {
+    padding-top: 5vh;
+    display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.center-data {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
